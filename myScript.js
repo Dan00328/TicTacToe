@@ -48,6 +48,8 @@ function isTheGameFinished() {
     end = true;
     return end;
 }
+let player1=0;
+let player2=0;
 let verificare = 0;
 function getWinner() {
     for (let j = 0; j < winCondition.length; j++) {
@@ -68,7 +70,14 @@ function getWinner() {
             //return v1;
             alert(v1)
             resetGame();
-            
+            if(v1=="X"){
+                player1=player1+1;
+                document.getElementById("s1").innerHTML=player1;
+            } else if(v1=="O"){
+                player2=player2+1;
+                document.getElementById("s2").innerHTML=player2;
+            }
+
         }
 
     }

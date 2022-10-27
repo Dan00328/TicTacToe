@@ -9,9 +9,20 @@
 
     text-shadow: 0 0 2rem #721815;
     font-size: 50px;
-
 }
-
+.titluscore {
+    text-shadow: 0 0 2rem #721815;
+    
+}
+.scoreBoard{
+    border: 2px solid #db3a34;
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 150px;
+    font-size: 25px;
+    margin: 10px;
+    display:inline-block;
+}
 button {
     border: 1px solid #db3a34;
     border-radius: 0.8rem;
