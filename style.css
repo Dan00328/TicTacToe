@@ -78,4 +78,13 @@ table {
     display: inline-block;
     font-size: 20px;
     padding-bottom: 20px;
+    text-shadow: 0 0 2rem #721815;
+}
+.wintext{
+    vertical-align: middle;
+    text-align: center;
+}
+.wintext:hover{
+color: #ff0000;
+text-shadow: 0 0 2rem #721815;
 }
