@@ -2,6 +2,11 @@ var turn = 1;
 
 function cellClick(e) {
     let celula = document.getElementById(e);
+    if(turn==1){
+        document.getElementById("playerturn").innerHTML= "O's Turn"
+    }else{
+        document.getElementById("playerturn").innerHTML= "X's Turn"
+    }
     if (celula.innerHTML == "" && blocat == 0) {
         if (turn == 1) {
             celula.innerHTML = "X"
