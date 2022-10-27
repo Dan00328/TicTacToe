@@ -2,7 +2,7 @@ var turn = 1;
 
 function cellClick(e) {
     let celula = document.getElementById(e);
-    if (celula.innerHTML == "") {
+    if (celula.innerHTML == "" && blocat == 0) {
         if (turn == 1) {
             celula.innerHTML = "X"
             turn = 0;
@@ -22,7 +22,7 @@ function cellClick(e) {
 function resetGame() {
     for (let i = 0; i < 9; i++) {
         document.getElementById(i).innerHTML = "";
-        
+        blocat=0;
     }
 }
 
@@ -48,6 +48,7 @@ function isTheGameFinished() {
     end = true;
     return end;
 }
+let blocat=0;
 let player1=0;
 let player2=0;
 let verificare = 0;
@@ -66,10 +67,11 @@ function getWinner() {
         let v1 = c1.innerHTML;
         let v2 = c2.innerHTML;
         let v3 = c3.innerHTML;
-        if (v1 == v2 && v2 == v3 && v3 != "") {
+        if (v1 == v2 && v2 == v3 && v3 != "" ) {
             //return v1;
             alert(v1)
-            resetGame();
+            verificare=1;
+            blocat=1;
             if(v1=="X"){
                 player1=player1+1;
                 document.getElementById("s1").innerHTML=player1;
@@ -82,15 +84,16 @@ function getWinner() {
 
     }
     if (end == false) {
-        verificare = 1;
+        verificare = 0;
         return "";
     } else if (verificare == 0) {
         //return "Tie";
         alert("Tie")
-        resetGame();
+       blocat=1;
     }
 
 }
+
 
 
 //III adaugati comentarii relevante in cod ;-;
