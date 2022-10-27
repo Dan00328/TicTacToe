@@ -107,10 +107,10 @@ function schimbaCuloare() {
         elem.style = "box-shadow: inset 0 0 0.5rem 0.3rem hsl(" + culoareCurenta + ", 88%, 44%);"
     }
 
-    if(culoareCurenta>=360){
-        culoareCurenta=0;
-    } else{
-        culoareCurenta= culoareCurenta+20;
+    if (culoareCurenta >= 360) {
+        culoareCurenta = 0;
+    } else {
+        culoareCurenta = culoareCurenta + 10;
     }
 }
 setInterval(schimbaCuloare, 100);
