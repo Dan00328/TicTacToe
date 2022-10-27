@@ -24,7 +24,7 @@
 }
 
 .titluscore:hover {
-    text-shadow: 0 0 2rem #570603;
+
     color: #ff0000;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .score:hover {
-    text-shadow: 0 0 2rem #570603;
+
     color: #ff0000;
 
 }
@@ -76,8 +76,8 @@ button:hover {
 
 td {
     border: 2px solid #db3a34;
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 100px;
     text-align: center;
     vertical-align: middle;
     font-size: 50px;
