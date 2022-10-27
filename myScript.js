@@ -15,13 +15,14 @@ function cellClick(e) {
             getWinner();
         }
     }
-    
-   
+
+
 }
 
 function resetGame() {
     for (let i = 0; i < 9; i++) {
         document.getElementById(i).innerHTML = "";
+        
     }
 }
 
@@ -39,15 +40,15 @@ let end;
 function isTheGameFinished() {
     for (let i = 0; i < 9; i++) {
         if (document.getElementById(i).innerHTML == "") {
-            end=false;
+            end = false;
             return end;
         }
 
     }
-    end=true;
+    end = true;
     return end;
 }
-let verificare=0;
+let verificare = 0;
 function getWinner() {
     for (let j = 0; j < winCondition.length; j++) {
         let conditie = winCondition[j];
@@ -67,19 +68,19 @@ function getWinner() {
             //return v1;
             alert(v1)
             resetGame();
-            verificare=1;
-        } 
-    
+            
+        }
+
     }
-    if(end== false){
-        verificare =1;
+    if (end == false) {
+        verificare = 1;
         return "";
-    } else if(verificare==0){
+    } else if (verificare == 0) {
         //return "Tie";
-       alert("Tie")
-       resetGame();
+        alert("Tie")
+        resetGame();
     }
-    
+
 }
 
 
