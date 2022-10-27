@@ -2,10 +2,10 @@ var turn = 1;
 
 function cellClick(e) {
     let celula = document.getElementById(e);
-    if(turn==1){
-        document.getElementById("playerturn").innerHTML= "O's Turn"
-    }else{
-        document.getElementById("playerturn").innerHTML= "X's Turn"
+    if (turn == 1) {
+        document.getElementById("playerturn").innerHTML = "O's Turn"
+    } else {
+        document.getElementById("playerturn").innerHTML = "X's Turn"
     }
     if (celula.innerHTML == "" && blocat == 0) {
         if (turn == 1) {
@@ -27,8 +27,8 @@ function cellClick(e) {
 function resetGame() {
     for (let i = 0; i < 9; i++) {
         document.getElementById(i).innerHTML = "";
-        blocat=0;
-        document.getElementById("winner").innerHTML="-";
+        blocat = 0;
+        document.getElementById("winner").innerHTML = "-";
     }
 }
 
@@ -54,9 +54,9 @@ function isTheGameFinished() {
     end = true;
     return end;
 }
-let blocat=0;
-let player1=0;
-let player2=0;
+let blocat = 0;
+let player1 = 0;
+let player2 = 0;
 let verificare = 0;
 function getWinner() {
     for (let j = 0; j < winCondition.length; j++) {
@@ -73,17 +73,17 @@ function getWinner() {
         let v1 = c1.innerHTML;
         let v2 = c2.innerHTML;
         let v3 = c3.innerHTML;
-        if (v1 == v2 && v2 == v3 && v3 != "" ) {
+        if (v1 == v2 && v2 == v3 && v3 != "") {
             //return v1;
-            document.getElementById("winner").innerHTML="The winner is..."+v1;
-            verificare=1;
-            blocat=1;
-            if(v1=="X"){
-                player1=player1+1;
-                document.getElementById("s1").innerHTML=player1;
-            } else if(v1=="O"){
-                player2=player2+1;
-                document.getElementById("s2").innerHTML=player2;
+            document.getElementById("winner").innerHTML = "The winner is..." + v1;
+            verificare = 1;
+            blocat = 1;
+            if (v1 == "X") {
+                player1 = player1 + 1;
+                document.getElementById("s1").innerHTML = player1;
+            } else if (v1 == "O") {
+                player2 = player2 + 1;
+                document.getElementById("s2").innerHTML = player2;
             }
 
         }
@@ -94,8 +94,23 @@ function getWinner() {
         return "";
     } else if (verificare == 0) {
         //return "Tie";
-        document.getElementById("winner").innerHTML="There is no winner....Tie";
-       blocat=1;
+        document.getElementById("winner").innerHTML = "There is no winner....Tie";
+        blocat = 1;
     }
 
 }
+let culoareCurenta = 0;
+function schimbaCuloare() {
+    let listaElemente1 = document.getElementsByClassName('glow');
+    for (let t = 0; t < listaElemente1.length; t++) {
+        let elem = listaElemente1[t];
+        elem.style = "box-shadow: inset 0 0 0.5rem 0.3rem hsl(" + culoareCurenta + ", 88%, 44%);"
+    }
+
+    if(culoareCurenta>=360){
+        culoareCurenta=0;
+    } else{
+        culoareCurenta= culoareCurenta+20;
+    }
+}
+setInterval(schimbaCuloare, 100);
