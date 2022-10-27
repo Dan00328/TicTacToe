@@ -47,6 +47,7 @@ function isTheGameFinished() {
     end=true;
     return end;
 }
+let verificare=0;
 function getWinner() {
     for (let j = 0; j < winCondition.length; j++) {
         let conditie = winCondition[j];
@@ -66,12 +67,14 @@ function getWinner() {
             //return v1;
             alert(v1)
             resetGame();
-        }
+            verificare=1;
+        } 
     
     }
     if(end== false){
+        verificare =1;
         return "";
-    } else{
+    } else if(verificare==0){
         //return "Tie";
        alert("Tie")
        resetGame();
