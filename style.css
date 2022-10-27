@@ -64,10 +64,3 @@ table {
     display: inline-block;
 }
 
-table tr:first-child td {}
-
-table tr:last-child td {}
-
-table tr td:first-child {}
-
-table tr td:last-child {}
