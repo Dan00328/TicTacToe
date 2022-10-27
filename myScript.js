@@ -23,6 +23,7 @@ function resetGame() {
     for (let i = 0; i < 9; i++) {
         document.getElementById(i).innerHTML = "";
         blocat=0;
+        document.getElementById("winner").innerHTML="-";
     }
 }
 
@@ -69,7 +70,7 @@ function getWinner() {
         let v3 = c3.innerHTML;
         if (v1 == v2 && v2 == v3 && v3 != "" ) {
             //return v1;
-            alert(v1)
+            document.getElementById("winner").innerHTML="The winner is..."+v1;
             verificare=1;
             blocat=1;
             if(v1=="X"){
@@ -88,12 +89,9 @@ function getWinner() {
         return "";
     } else if (verificare == 0) {
         //return "Tie";
-        alert("Tie")
+        document.getElementById("winner").innerHTML="There is no winner....Tie";
        blocat=1;
     }
 
 }
-
-
-
 //III adaugati comentarii relevante in cod ;-;
