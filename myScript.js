@@ -56,7 +56,7 @@ let verificare = 0;
 function getWinner() {
     for (let j = 0; j < winCondition.length; j++) {
         let conditie = winCondition[j];
-        //Se extrag din "conditie" combinatiile de pozitii
+        //Se extrag din conditie combinatiile de pozitii
         let poz1 = conditie[0];
         let poz2 = conditie[1];
         let poz3 = conditie[2];
@@ -94,4 +94,3 @@ function getWinner() {
     }
 
 }
-//III adaugati comentarii relevante in cod ;-;
