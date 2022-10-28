@@ -1,6 +1,6 @@
 * {
     text-align: center;
-    
+
     background-color: #010a01;
     color: #db3a34;
     user-select: none;
@@ -17,28 +17,31 @@
         0 0 92px #db3a34,
         0 0 102px #db3a34,
         0 0 151px #db3a34;
-       
-  }
-  .neonText:hover{
+
+}
+
+.neonText:hover {
     transition: 2s;
     color: #db3a34;
     text-shadow:
-    0 0 7px #ffffff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #db3a34,
-    0 0 82px #db3a34,
-    0 0 92px #db3a34,
-    0 0 102px #db3a34,
-    0 0 151px #db3a34;
-   
+        0 0 7px #ffffff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #db3a34,
+        0 0 82px #db3a34,
+        0 0 92px #db3a34,
+        0 0 102px #db3a34,
+        0 0 151px #db3a34;
 
-  }
+
+}
 
 .titlu {
 
     text-shadow: 0 0 2rem #721815;
     font-size: 35px;
+    width: 300px;
+    display: inline-block;
 
 }
 
@@ -137,4 +140,3 @@ table {
     display: inline-block;
     width: 350px;
 }
-
