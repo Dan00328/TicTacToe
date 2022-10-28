@@ -1,9 +1,38 @@
 * {
     text-align: center;
-    background-color: #323031;
+    
+    background-color: #010a01;
     color: #db3a34;
     user-select: none;
+    font-family: 'Silkscreen', cursive;
 }
+.neonText {
+    color: #ffffff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #db3a34,
+        0 0 82px #db3a34,
+        0 0 92px #db3a34,
+        0 0 102px #db3a34,
+        0 0 151px #db3a34;
+       
+  }
+  .neonText:hover{
+    color: #db3a34;
+    text-shadow:
+    0 0 7px #ffffff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #db3a34,
+    0 0 82px #db3a34,
+    0 0 92px #db3a34,
+    0 0 102px #db3a34,
+    0 0 151px #db3a34;
+   
+
+  }
 
 .titlu {
 
@@ -14,41 +43,35 @@
 
 .titluscore {
     text-shadow: 0 0 2rem #721815;
-    display: inline-block;
+    display: inline-flex;
     width: 100px;
     font-size: 30px;
     padding: 0%;
+
     margin: 10px;
     font-size: 20px;
 
+
 }
 
-.titluscore:hover {
 
-    color: #ff0000;
-}
 
 .score {
     text-shadow: 0 0 2rem #721815;
-    display: inline-block;
+    display: inline;
     width: 100px;
     padding: 0%;
-    margin: 10px;
+    margin: 0px;
     font-size: 15px;
 
 }
 
-.score:hover {
 
-    color: #ff0000;
-
-}
 
 .scoreBoard {
-    border: 2px solid #db3a34;
     border-radius: 0.5rem;
     width: 180px;
-    height: 80px;
+    height: 50px;
     font-size: 25px;
     margin: 10px;
     display: inline-block;
@@ -98,7 +121,6 @@ table {
 }
 
 .winmessage {
-    border: 1px solid #db3a34;
     border-radius: 10px;
     height: 30px;
     margin: 10px;
@@ -115,7 +137,3 @@ table {
     width: 350px;
 }
 
-.wintext:hover {
-    color: #ff0000;
-    text-shadow: 0 0 2rem #721815;
-}
