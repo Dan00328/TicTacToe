@@ -113,4 +113,4 @@ function schimbaCuloare() {
         culoareCurenta = culoareCurenta + 10;
     }
 }
-setInterval(schimbaCuloare, 300);
+setInterval(schimbaCuloare, 100);
